@@ -317,6 +317,7 @@ static Protocol *a2_classProtocol(Class _cls, NSString *suffix, NSString *descri
 	while (cls) {
 		NSString *className = NSStringFromClass(cls);
 		NSString *protocolName = [className stringByAppendingString:suffix];
+        if (className && ![className isEqualToString:@"WKWebview"]) { protocolName = @"WKNavigationDelegate"; }
 		Protocol *protocol = objc_getProtocol(protocolName.UTF8String);
 		if (protocol) return protocol;
 
