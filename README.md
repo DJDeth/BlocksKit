@@ -7,6 +7,13 @@ BlocksKit is a framework for OS X Mountain Lion and newer, a static library for 
 
 BlocksKit was created by [Zachary Waldowski](https://github.com/zwaldowski) and [Alexsander Akers](https://github.com/a2) and is maintained by the former.
 
+
+UPDATE
+============
+removed UIWebView deprecated codes for App Store submission
+
+TODO: Fully convert UIWebView to WKWebview
+
 Installation
 ============
 
